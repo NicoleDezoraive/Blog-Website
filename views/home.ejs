@@ -4,8 +4,20 @@
 
 <div class="">
   <p> <%=paragraphTextHome%> </p>
+  <button type="submit" name="button"> <a href="/compose">Add Post</a></button>
 </div>
 
+<div class="">
+  <% newListPosts.forEach(function(post){ %>
+  <h3>
+    <%= post.title %>
+  </h3>
+  <p>
+    <%= post.content %>
+  </p>
+  <%  }) %>
+
+</div>
 
 
 <%- include("partials/footer") -%>
