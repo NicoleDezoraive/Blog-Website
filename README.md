@@ -6,6 +6,10 @@
 ## video:
 [Nicole's Blog Video](https://github.com/NicoleDezoraive/Blog-Website/blob/master/public/images/video1204755231.mp4)
 
+
+https://user-images.githubusercontent.com/49281896/217269811-3cada675-5b0b-41f7-8baf-704a0464b19b.mp4
+
+
 ## Screen Shot:
 #### Home Page:
 ![Home Page](https://github.com/NicoleDezoraive/Blog-Website/blob/master/public/images/homePage.JPG)
