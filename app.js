@@ -5,10 +5,9 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 
-const homeStartingContent = "Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor neque vitae tempus quam. Sit amet cursus sit amet dictum sit amet justo. Viverra tellus in hac habitasse. Imperdiet proin fermentum leo vel orci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Odio euismod lacinia at quis risus sed vulputate odio ut. Cursus mattis molestie a iaculis at erat pellentesque adipiscing.";
-const aboutContent = "Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Non diam phasellus vestibulum lorem sed. Platea dictumst quisque sagittis purus sit. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Mauris in aliquam sem fringilla. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Amet massa vitae tortor condimentum lacinia quis vel eros. Enim ut tellus elementum sagittis vitae. Mauris ultrices eros in cursus turpis massa tincidunt dui.";
-const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
-
+const homeStartingContent = "When I started writing this blog, my main goal was to practice for job interviews and improve the skills needed to succeed in interviews.\nThose who search will find posts in the blog that essentially tell about my personal achievements, post tips with recommendations and motivation to continue looking for a job, etc.\nThe goal is that this blog will become my place to discuss career issues, personal development, doubts, personal projects, and more.\nEverything is related to the world of programming and high-tech work.\nIf you enjoyed it (or not) I am more than happy to receive comments, suggestions for improvements, and ideas for additional posts.\nIf you have used my blog to find a job or advance in your career, let me know, it gives me the energy to keep writing!\nI hope you find posts that will be interesting and useful to you.";
+const aboutContent = "I’m Nicole, and if there’s one thing you need to know about me, is that I am motivated to learn, grow and excel.\n I graduated B.Sc. in Software and Information Systems Engineering from the Ben-Gurion University of the Negev.\nLooking for a full-time position as a software developer.\nAlways had a passion for new technologies, and love solving Logic puzzles and programming problems.\nLooking for an adventure with new challenges along in the software development world!";
+const contactContent = "My Contact Details:";
 const app = express();
 let posts = [];
 
@@ -45,7 +44,8 @@ app.get('/compose', (req, res) => {
 app.post('/compose', (req, res) => {
   const post = {
     title: req.body.postTitle,
-    content: req.body.postBody
+    content: req.body.postBody,
+    image: req.body.postImage,
   };
   posts.push(post);
   res.redirect("/");
@@ -58,7 +58,8 @@ app.get('/posts/:postName', (req, res) => {
     if ( storedTitle === reqTitle){
       res.render('post', {
         postTitle: post.title,
-        postTest: post.content
+        postTest: post.content,
+        postImage: post.image
       });
     }
   });

@@ -1,3 +1,54 @@
+body {
+  /* background-color: #FEFBF3; */
+  margin: 0;
+  /* text-align: center; */
+  /* font-family: 'Merriweather Sans', sans-serif; */
+  font-size: 2rem;
+  font-family: 'Sacramento', cursive;
+}
+
+h1 {
+  margin: 2;
+  font-size: 4rem ;
+  color: #E9DAC1;
+  /* font-family: 'Sacramento', cursive; */
+}
+
+h2{
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 2rem;
+  margin: 0;
+  color: #79B4B7;
+}
+
+p{
+  margin: 0;
+  line-height: 2;
+}
+
+.opening-explanation{
+  margin-top: 30px;
+}
+
+.about-text{
+  padding: 20px;
+  text-align: center;
+}
+
+.top-container{
+  position: relative;
+  padding-top: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.nicol-profile-img{
+  width: 12%;
+  height: 5%;
+  /* float: left; */
+  margin-bottom: 20px;
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -33,14 +84,6 @@
 	font-size: 12px;
   color: #fff;
 }
-
-/* .box {
-  max-width: 400px;
-  margin: 50px auto;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-} */
 
 button {
   background-color: #1abc9c;

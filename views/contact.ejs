@@ -1,11 +1,28 @@
 <%- include("partials/header") -%>
 
-<h1>Contact</h1>
-
 <div class="">
-  <p> <%=paragraphTextContact%> </p>
+  <h1> <%=paragraphTextContact%> </h1>
 </div>
 
-
+<div class="contact">
+  <br />
+  <p><b>Call:</b> +972-(0)54-6712782</p>
+  <p><b>Email:</b> dezoraivenicole@gmail.com</p>
+  <hr>
+  <form class="contact" action="mailto:dezoraivenicole@gmail.com" method="post" enctype="text/plain">
+    <label for="">Your Full Name:</label>
+    <input type="text" name="yourFullName" value="">
+    <label for="">Your Email:</label>
+    <input type="email" name="yourEmail" value="">
+    <br><br>
+    <label for="">Subject:</label><br>
+    <textarea name="subject" rows="1" cols="100"></textarea>
+    <br><br>
+    <label for="">Your Message:</label><br>
+    <textarea name="yourMessage" rows="4" cols="100"></textarea>
+    <br>
+    <input class="myButton" type="submit" name="submit" value="SEND">
+  </form>
+</div>
 
 <%- include("partials/footer") -%>
