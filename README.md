@@ -4,7 +4,7 @@
   * Nicole Dezoraive, ניקול דזוראיב ,[Email](dezoraivenicole@gmail.com),[Git](https://github.com/NicoleDezoraive),[Linkedin](https://www.linkedin.com/in/nicole-dezoraive-124b74168)
 
 ## Nicole's Blog Video:
-
+https://github.com/NicoleDezoraive/Blog-Website/blob/master/public/images/videoNicoleBlog.mp4
 
 
 ## Screen Shot:
