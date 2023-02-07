@@ -3,10 +3,7 @@
 ## Developer:
   * Nicole Dezoraive, ניקול דזוראיב ,[Email](dezoraivenicole@gmail.com),[Git](https://github.com/NicoleDezoraive),[Linkedin](https://www.linkedin.com/in/nicole-dezoraive-124b74168)
 
-## video:
-[Nicole's Blog Video](https://github.com/NicoleDezoraive/Blog-Website/blob/master/public/images/video1204755231.mp4)
-
-
+## Nicole's Blog Video:
 https://user-images.githubusercontent.com/49281896/217269811-3cada675-5b0b-41f7-8baf-704a0464b19b.mp4
 
 
