@@ -27,7 +27,7 @@ p{
 }
 
 .opening-explanation{
-  margin-top: 30px;
+  margin-top: 3px;
 }
 
 .about-text{
@@ -36,10 +36,15 @@ p{
 }
 
 .top-container{
-  position: relative;
+  position: static;
   padding-top: 30px;
   margin: auto;
   text-align: center;
+}
+
+.container{
+  min-height:100%;
+  position:static
 }
 
 .nicol-profile-img{
@@ -67,20 +72,22 @@ p{
 }
 
 .footer-padding {
+  /* position: fixed; */
 	padding-bottom: 60px;
 }
 
 .footer {
-	position: absolute;
+  position:sticky;
 	text-align: center;
-	bottom: 0;
+  margin-bottom: 0px;
+	bottom: 0px;
 	width: 100%;
 	height: 60px;
 	background-color: #1abc9c;
 }
 
 .footer p {
-	margin-top: 25px;
+	margin-top: 50px;
 	font-size: 12px;
   color: #fff;
 }
