@@ -24,4 +24,3 @@ https://user-images.githubusercontent.com/49281896/217271435-48ee88f2-2ecd-492b-
 #### Post View Page:
 ![Post View Page](https://github.com/NicoleDezoraive/Blog-Website/blob/master/public/images/postViewPage.JPG)
 
-
